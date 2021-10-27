@@ -11,7 +11,6 @@ public abstract class Sweet {
 		MILK, SUGARLESS,JAGGERY,GHEE;
 	}
 	
-	
 	Color color;
 	Category category;
 	String name;
