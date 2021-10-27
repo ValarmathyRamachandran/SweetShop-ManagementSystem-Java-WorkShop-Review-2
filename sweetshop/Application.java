@@ -63,7 +63,6 @@ public class Application {
 					editedSweet.category= Sweet.Category.GHEE;
 					break;
 				}
-				break;
 				
 			case 2:
 				System.out.println("\n Enter 1 for BROWN color"
@@ -92,22 +91,22 @@ public class Application {
 					editedSweet.color = Sweet.Color.YELLOW;
 					break;
 				}
-				break;
+				
 			case 3:
 				System.out.println("Enter the new price amount");
 				int getPrice = scanner.nextInt();
 				editedSweet.price = getPrice;
-				break;
+			
 			case 4:
 				System.out.println("Enter the new Id");
-				int getId= scanner.nextInt();
-				editedSweet.price = getId;
-				break;
+				String getId= scanner.next();
+				editedSweet.id = getId;
+				
 			case 5:
 				System.out.println("Enter the new Sweet Name");
-				int getSweetName= scanner.nextInt();
-				editedSweet.price = getSweetName;
-				break;
+				String getSweetName= scanner.next();
+				editedSweet.name = getSweetName;
+				
 			default:	
 			}
 			break;
@@ -134,27 +133,27 @@ public class Application {
 	
 	public void addSweet() {
 		GulabJamun objGulabJamun = new GulabJamun();
-		objGulabJamun.id = "g001";
+		objGulabJamun.id = "G001";
 		objGulabJamun.price = 200;
 		
 		Laddu objLaddu = new Laddu();
-		objLaddu.id = "l1002";
+		objLaddu.id = "L1002";
 		objLaddu.price = 250;
 		
 		Laddu objLaddu2 = new Laddu();
-		objLaddu2.id = "l1002";
+		objLaddu2.id = "L1002";
 		objLaddu2.price = 250;
 		
 		Modak objModak = new Modak();
-		objModak.id = "m1003";
+		objModak.id = "M1003";
 		objModak.price = 150;
 		
 		Rasagulla objRasagulla= new Rasagulla();
-		objRasagulla.id = "r1004";
+		objRasagulla.id = "R1004";
 		objRasagulla.price = 250;
 		
 		Rasmalai objRasamalai= new Rasmalai();
-		objRasamalai.id= "r1005";
+		objRasamalai.id= "R1005";
 		objRasamalai.price = 300;
 		
 		DatesBarfi datesbarfi = new DatesBarfi();
