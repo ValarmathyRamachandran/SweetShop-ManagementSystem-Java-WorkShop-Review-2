@@ -2,6 +2,8 @@ package bridgelabz.sweetshop;
 import java.util.Scanner;
 import java.util.Set;
 
+import bridgelabz.sweetshop.Sweet.PropertyType;
+
 public class UserInterface {
 	private static UserInterface instance;
 	private UserInterface() {
@@ -30,19 +32,19 @@ public class UserInterface {
 		return option;
 	}
 	public void print(Set<Sweet> set) {
-		for(Sweet sweet:set) {
+		for(Sweet sweet : set) {
 			System.out.println(sweet);
 		}	
 	}
 	public void printIdiet(Set<Sweet> set) {
-		for(Sweet sweet:set) {
-			if(sweet instanceof IDiet)
+		for(Sweet sweet : set) {
+			if(sweet.propertyType == Sweet.PropertyType.DIET)
 			System.out.println(sweet);
 		}
 	}
 	public void printNormal(Set<Sweet> set) {
 		for(Sweet sweet:set) {
-			if(sweet instanceof INormal)
+			if(sweet.propertyType == Sweet.PropertyType.NORMAL)
 			System.out.println(sweet);
 		}
 	}

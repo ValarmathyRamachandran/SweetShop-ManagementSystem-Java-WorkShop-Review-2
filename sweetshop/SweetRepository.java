@@ -5,7 +5,6 @@ import java.util.Set;
 public class SweetRepository {
 	private Set<Sweet> sweetList = new HashSet<Sweet>();
 	private static SweetRepository instance;
-	
 	private SweetRepository() {
 		
 	}
@@ -16,7 +15,7 @@ public class SweetRepository {
 		return instance;
 	}
 	
-	public Set<Sweet> getSweetList() {
+	public Set getSweetList() {
 		return sweetList;
 	}
 	public void add(Sweet sweet) {

@@ -1,8 +1,7 @@
 package bridgelabz.sweetshop;
-
 import java.util.Objects;
 
-public abstract class Sweet {
+public class Sweet {
 	
 	enum Color{
 		BROWN, RED, GREEN, WHITE, BROWN_WHITE,YELLOW;
@@ -10,17 +9,22 @@ public abstract class Sweet {
 	enum Category{
 		MILK, SUGARLESS,JAGGERY,GHEE;
 	}
+	enum PropertyType{
+		DIET , NORMAL
+	}
 	
 	Color color;
 	Category category;
 	String name;
-	public String id;
-	public int price;
+	String id;
+	int price;
+	PropertyType propertyType;
 
+	
 	@Override
 	public String toString() {
-		return "Sweet [id=" + id + ", color=" + color + ", price=" + price + ", category=" + category + ", name=" + name
-				+ "]";
+		return "Sweet [color=" + color + ", category=" + category + ", name=" + name + ", id=" + id + ", price=" + price
+				+ ", propertyType=" + propertyType + "]";
 	}
 	@Override
 	public int hashCode() {
